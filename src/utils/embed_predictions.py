@@ -20,6 +20,10 @@ def embed_prediction_data(
     return original_unprocessed_data
 
 
+# TODO: improve the way that the single missing value in the test dataset in treated.
+# Simple mean imputation is not the best but time efficient for now.
+
+
 def map_targets_to_features(
     features: pd.DataFrame, predictions: SplitPredictions
 ) -> pd.DataFrame:

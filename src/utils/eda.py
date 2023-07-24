@@ -10,6 +10,7 @@ def get_train_test_feature_comparison_table(
         "st_dev": [train_data[feature].std(), test_data[feature].std()],
         "max": [train_data[feature].max(), test_data[feature].max()],
         "min": [train_data[feature].min(), test_data[feature].min()],
+        "median": [train_data[feature].median(), test_data[feature].median()],
         "count": [train_data[feature].shape[0], test_data[feature].shape[0]],
     }
 
@@ -24,6 +25,7 @@ def display_train_test_feature_comparison_histograms(
     _, (ax1, ax2) = plt.subplots(1, 2, sharex=True)
     ax1.hist(train_data[feature], axes=ax1)
     ax2.hist(test_data[feature], axes=ax2)
+
     plt.suptitle(
         f"Train ({len(train_data)} examples ) vs Test ({len(test_data)} examples) '{feature}' Distributions ()"
     )
