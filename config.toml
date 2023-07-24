@@ -1,0 +1,12 @@
+[split_params]
+train_frac = 0.7
+val_frac = 0.15
+
+[random]
+seed = 100
+
+[data_paths]
+train_data = "data/train.csv"
+test_data = "data/test.csv"
+preds_folder = "predictions"
+

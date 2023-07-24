@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ipykernel = "*"
+pandas = "*"
+matplotlib = "*"
+scikit-learn = "==1.3.0"
+tensorflow = "*"
+jinja2 = "*"
+seaborn = "*"
+pyserde = {extras = ["toml"], version = "*"}
+
+[dev-packages]
+mypy = "*"
+black = "*"
+ruff = "*"
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.8"
