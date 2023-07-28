@@ -25,6 +25,10 @@ The code in these modules is meant to be highly reusable and to support fast ite
 
 1.  Install `pipenv`
 
+```python
+pip install pipenv
+```
+
 2. Install dependencies
 
 ```bash
@@ -35,6 +39,6 @@ pipenv sync
 
 ### Further Improvements
 
-This project may be improved by further hyperparameter tuning and employing architecture search techniques for a better model architecture. For this phase of the project, developer time was mainly spent on optimizing the code for fast iterations.
+This project may be improved by further hyperparameter tuning and employing architecture search techniques for a better model architecture. For this phase of the project, developer time was mainly spent on optimizing the code for fast iterations. 
 
-Another future improvement will be the implementation of more flexibility in the design of the `FeatureEngineer` APi. This will allow for model specific feature engineering as opposed to being constrained to use identical feature engineering for each iteration.
+Another future improvement will be the implementation of more flexibility in the design of the `FeatureEngineer` APi. This will allow for model specific feature engineering as opposed to being constrained to using identical feature engineering for each model in a particular iteration.
